@@ -1,0 +1,16 @@
+{
+  "name": "mini-project",
+  "version": "1.0.0",
+  "description": "mini-project asmaraku",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Krishna Hendra Wijaya",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "node-fetch": "^2.0.0",
+    "nodemon": "^2.0.16"
+  }
+}
