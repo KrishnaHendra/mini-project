@@ -15,7 +15,7 @@ var schema = mongoose.Schema({
     jumlah_dirawat: Number,
     jumlah_sembuh: Number,
     jumlah_meninggal: Number,
-    created: Date,
+    created: { type: Date, default: Date.now },
 });
 
 var Report = mongoose.model("report", schema, "report");
@@ -29,8 +29,6 @@ async function get_request() {
 
 async function storeData() {
     let getFromApi = await get_request();
-
-    getFromApi.update.penambahan.jumlah_positif = 0;
 
     if (getFromApi.update.penambahan.jumlah_positif > 0 && getFromApi.update.penambahan.jumlah_positif != null) {
         var data = new Report(getFromApi.update.total);
