@@ -1,13 +1,13 @@
 {
-  "name": "mini-project",
+  "name": "asmaraku",
   "version": "1.0.0",
-  "description": "mini-project asmaraku",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon index"
   },
-  "author": "Krishna Hendra Wijaya",
+  "author": "krishna Hendra Wijaya",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",
@@ -15,5 +15,6 @@
     "node-cron": "^3.0.0",
     "node-fetch": "^2.0.0",
     "nodemon": "^2.0.16"
-  }
+  },
+  "type": "module"
 }
