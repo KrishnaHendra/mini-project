@@ -1,23 +1,10 @@
-// import express from 'express';
-// import {checkUpdate, dataCovid, storeData} from '../controllers/covidController.js';
-
-// const router = express.Router();
-// router.get('/', checkUpdate());
-
-// router.post('/', storeData());
-
-// export default router;
-
 import express from 'express';
-const app = express()
+import { checkUpdate, dataCovid, storeData } from '../controllers/covidController.js';
 
-app.get('/', async (req,res) => {
-    // const data = await(storeData())
-    res.json({
-        msg: 'Fetch Data Success!'
-    })
-})
+const router = express.Router();
 
-app.get('*', (req,res) => {
-    res.json('Page Not Found')
-})
+router.get('/', checkUpdate);
+router.get('/getdatacovid', dataCovid);
+router.post('/', storeData);
+
+export { router };

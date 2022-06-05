@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "types": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index"
@@ -12,6 +13,7 @@
   "dependencies": {
     "express": "^4.18.1",
     "mongoose": "^6.3.5",
+    "node-abort-controller": "^3.0.1",
     "node-cron": "^3.0.0",
     "node-fetch": "^2.0.0",
     "nodemon": "^2.0.16"
